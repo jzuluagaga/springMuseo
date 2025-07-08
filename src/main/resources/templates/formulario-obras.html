@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Buscar obras por tipo</title></head>
+<body>
+<h1>Filtrar obras por tipo</h1>
+<form action="/obras/resultado" method="post">
+  <label for="tipo">Tipo de obra:</label>
+  <input type="text" name="tipo" id="tipo" placeholder="pintura, escultura...">
+  <button type="submit">Buscar</button>
+</form>
+</body>
+</html>

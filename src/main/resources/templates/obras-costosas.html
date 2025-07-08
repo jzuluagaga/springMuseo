@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Obras Costosas</title></head>
+<body>
+<h1>Obras con costo mayor a 1 millón</h1>
+<table border="1">
+    <tr><th>ID</th><th>Nombre</th><th>Tipo</th><th>Costo</th></tr>
+    <tr th:each="obra : ${obrasCostosas}">
+        <td th:text="${obra.id}"></td>
+        <td th:text="${obra.nombre}"></td>
+        <td th:text="${obra.tipo}"></td>
+        <td th:text="${obra.costo}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Museos</title>
+</head>
+<body>
+<h1>Museos Registrados</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+    </tr>
+    <tr th:each="museo : ${museos}">
+        <td th:text="${museo.mu_id}">1</td>
+        <td th:text="${museo.mu_nombre}">Louvre</td>
+    </tr>
+</table>
+</body>
+</html>
